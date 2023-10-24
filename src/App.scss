@@ -1,0 +1,13 @@
+$primary-color: #48894f;
+
+@import 'animate.css';
+
+@font-face {
+  font-family: 'Rubik';
+  src: url(./assets/fonts/Rubik-VariableFont_wght.ttf) format('ttf');
+}
+
+input, textarea, p {
+  font-family: 'Rubik';
+  font-weight: 300;
+}
