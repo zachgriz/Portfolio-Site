@@ -1,0 +1,48 @@
+@import './App.scss';
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    color: $secondary-color;
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.2rem;
+}
+
+.navlist {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navitem {
+    padding: 10px;
+    position: relative;
+}
+
+.navitem a {
+    color: $secondary-color;
+    text-decoration: none;
+}
+.navitem a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px; /* Set the initial width for the dot */
+    height: 6px; /* Set the initial height for the dot */
+    background-color: $primary-color; /* Default dot color */
+    border-radius: 50%; /* Make it circular */
+    //transform: scaleX(0); /* Start with no width */
+    transition: transform 0.4s ease, width 0.4s ease; /* Animation duration and easing */
+}
+
+.navitem a:hover::before {
+    width: 70%; /* Expand the width to create an underline */
+    //transform: scaleX(1); /* Expand the underline to full width on hover */
+    border-radius: 40%;
+}

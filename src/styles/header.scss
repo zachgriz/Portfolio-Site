@@ -1,0 +1,15 @@
+@import './App.scss';
+
+.header {
+    color: $secondary-color;
+    font-family: 'Inconsolata';
+    font-weight: 400;
+    letter-spacing: .7rem;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+
