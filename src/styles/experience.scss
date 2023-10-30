@@ -1,26 +1,37 @@
 @import "./about.scss";
 
 
-.container {
-    position: relative;
-    display: block;
+.experience {
     font-family: 'Poppins';
-    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience .grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 60% auto;
+    align-items: center;
+    gap: 2rem;
+    width: 90vw;
+    margin: auto;
 }
 
 .subhead {
     color: $secondary-color;
     font-size: 4rem;
     font-weight: 600;
-}
-
-.subhead span {
+    display: block;
+    margin: auto;
     border-bottom: 5px solid $primary-color;
+    width: fit-content;
     padding: 2px;
 }
 
-.experience {
-    padding-top: 5rem;
+
+.item {
+    padding: 5rem 2rem;
+    margin: auto;
 }
 
 .title {
@@ -33,9 +44,22 @@
     font-size: 2rem;
     color: $secondary-color;
     padding: 1rem;
-    font-style: italic;
+}
+
+.experience .blur {
+    position: relative;
+    box-shadow: 95vw 500px 1000px 70px #4491d8;
+    z-index: -100;
+}
+
+.body {
+    color: $secondary-color;
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 .duration {
-
+    color: $primary-color;
+    font-style: italic;
+    font-size: 1.5rem;
 }
