@@ -1,0 +1,14 @@
+@import './App.scss';
+
+.tag {
+    background-color: $primary-color;
+    color: $secondary-color;
+    width: fit-content;
+    font-family: 'Poppins';
+    font-size: 2rem;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 1px 5px 1px 5px;
+    margin: 5px;
+    display: inline-block;
+}

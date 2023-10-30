@@ -3,19 +3,17 @@ import './styles/App.scss';
 import Header from './components/header';
 import Navbar from './components/navbar';
 import About from './components/about';
+import Experience from './components/experience';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-      <BrowserRouter>
         <div className='App'>
           <Header/>
           <Navbar/>
-          <Routes>
-            <Route path='/about' element={<About/>} />
-          </Routes>
+          <About/>
+          <Experience/>
         </div>
-      </BrowserRouter>
       
   );
 }

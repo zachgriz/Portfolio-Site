@@ -38,11 +38,11 @@
     background-color: $primary-color; /* Default dot color */
     border-radius: 50%; /* Make it circular */
     //transform: scaleX(0); /* Start with no width */
-    transition: transform 0.4s ease, width 0.4s ease; /* Animation duration and easing */
+    transition: transform 0.4s ease, width 0.4s ease, border-radius 0.4s ease; /* Animation duration and easing */
 }
 
 .navitem a:hover::before {
     width: 70%; /* Expand the width to create an underline */
     //transform: scaleX(1); /* Expand the underline to full width on hover */
-    border-radius: 40%;
+    border-radius: 100px;
 }

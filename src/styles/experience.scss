@@ -1,0 +1,41 @@
+@import "./about.scss";
+
+
+.container {
+    position: relative;
+    display: block;
+    font-family: 'Poppins';
+    padding: 5rem;
+}
+
+.subhead {
+    color: $secondary-color;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.subhead span {
+    border-bottom: 5px solid $primary-color;
+    padding: 2px;
+}
+
+.experience {
+    padding-top: 5rem;
+}
+
+.title {
+    color: $primary-color;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.title span {
+    font-size: 2rem;
+    color: $secondary-color;
+    padding: 1rem;
+    font-style: italic;
+}
+
+.duration {
+
+}
