@@ -4,22 +4,19 @@ import { Link } from "react-scroll";
 
 export default class Navbar extends React.Component {
     render() {
-        return <nav className="navbar">
-            <ul className="navlist">
-                <li className="navitem">
-                    <Link to="/" smooth={true} duration={500}>about</Link>
-                </li>
-                <li className="navitem">
-                    <Link to="experience" smooth={true} duration={500}>experience</Link>
-                </li>
-                <li className="navitem">
-                    <Link to="projects" smooth={true} duration={500}>projects</Link>
-                </li>
-                <li className="navitem">
-                    <Link to="hobbies" smooth={true} duration={500}>interests</Link>
-                </li>
-
-            </ul>
-        </nav>
+        return <div className="navbar">
+                    <div className="navitem">
+                        <Link to="about" spy smooth duration={500}>about</Link>
+                    </div>
+                    <div className="navitem">
+                        <Link to="experience" spy smooth duration={500} offset={-50}>experience</Link>
+                    </div>
+                    <div className="navitem">
+                        <Link to="projects" spy smooth duration={500}>projects</Link>
+                    </div>
+                    <div className="navitem">
+                        <Link to="hobbies" spy smooth duration={500}>interests</Link>
+                    </div>
+        </div>
     }
 }

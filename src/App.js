@@ -6,16 +6,14 @@ import About from './components/about';
 import Experience from './components/experience';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
-import { EmailJSResponseStatus } from '@emailjs/browser';
 
 function App() {
   return (
-        <div className='App'>
+        <div>
           <Header/>
           <Navbar/>
-          <About/>
+          <About id="about"/>
           <div className='socials'>
             <a href="https://www.linkedin.com/in/zach-griswold/">
               <FontAwesomeIcon icon={faLinkedin} className='icon'/>
