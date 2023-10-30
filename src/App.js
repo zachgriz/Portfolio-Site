@@ -4,6 +4,7 @@ import Header from './components/header';
 import Navbar from './components/navbar';
 import About from './components/about';
 import Experience from './components/experience';
+import Socials from './components/socials';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
@@ -13,18 +14,8 @@ function App() {
         <div>
           <Header/>
           <Navbar/>
-          <About id="about"/>
-          <div className='socials'>
-            <a href="https://www.linkedin.com/in/zach-griswold/">
-              <FontAwesomeIcon icon={faLinkedin} className='icon'/>
-            </a>
-            <a href="https://github.com/zachgriz">
-              <FontAwesomeIcon icon={faGithubSquare} className='icon'/>
-            </a>
-            <a href='mailto:zachgrizzly@gmail.com?subject=Contact via Portfolio'>
-              <FontAwesomeIcon icon={faEnvelopeSquare} className='icon'/>
-            </a>
-          </div>
+          <About/>
+          <Socials/>
           <Experience/>
         </div>
       

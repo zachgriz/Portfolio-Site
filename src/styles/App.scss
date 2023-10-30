@@ -14,22 +14,3 @@ html {
   max-height: 100vh;
   overflow: auto;
 }
-
-.socials {
-  width: 100vw;
-  background-color: $primary-color;
-  height: 70px;
-  margin: 10rem 0 15rem 0;
-  justify-content: space-evenly;
-  display: flex;
-}
-
-.icon {
-  height: 50px;
-}
-
-.socials a {
-  margin-top: auto;
-  margin-bottom: auto;
-  color: $secondary-color;
-}
