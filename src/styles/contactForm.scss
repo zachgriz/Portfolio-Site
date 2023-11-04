@@ -1,0 +1,68 @@
+@import './App.scss';
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    margin: 15px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.formGroup label {
+    color: $primary-color;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 3px;
+}
+
+.formGroup textarea {
+    resize: none;
+    min-height: 5lh;
+}
+
+.formGroup textarea, input {
+    padding: 8px;
+    font-family: 'Poppins';
+    width: 50vw;
+    line-height: 24px;
+    border-radius: 10px;
+}
+
+.form button {
+    width: 10vw;
+    height: 3vw;
+    min-width: 110px;
+    min-height: 35px;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 10px;
+    color: $secondary-color;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.form button:hover {
+    background-color: #407045;
+}
+
+.form h1 {
+    margin-bottom: 50px;
+}
+
+.error-message {
+    color: rgb(201, 42, 68);
+    font-size: 12px;
+}
+
+.success-message {
+    color: $primary-color;
+    font-size: 12px;
+}

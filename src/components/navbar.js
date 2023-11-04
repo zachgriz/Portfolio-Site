@@ -17,6 +17,9 @@ export default class Navbar extends React.Component {
                     <div className="navitem">
                         <Link to="hobbies" spy smooth duration={500}>interests</Link>
                     </div>
+                    <div className="navitem">
+                        <Link to="contact" spy smooth duration={500}>contact</Link>
+                    </div>
         </div>
     }
 }

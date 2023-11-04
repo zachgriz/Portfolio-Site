@@ -1,5 +1,6 @@
 import React from "react";
 import '../styles/experience.scss';
+import launch from '../assets/launch.png';
 
 export default class Experience extends React.Component{
     render () {
@@ -23,7 +24,7 @@ export default class Experience extends React.Component{
                     <p className="body">Lorem consequat irure aliqua culpa aliquip proident. Magna mollit cupidatat reprehenderit id consectetur excepteur minim non aute cupidatat. Culpa excepteur cupidatat in deserunt aliquip laboris nulla irure nulla Lorem. Adipisicing cillum Lorem laborum sint est cillum est laboris magna. Veniam aute cillum dolor deserunt id amet aliqua sint officia.</p>
                 </div>
                 <div className="logo">
-                    <img></img>
+                    <a href="https://www.launchconsulting.com"><img src={launch} className="logo"/></a>
                 </div>
                 <div className="item">
                     <p className="title">Washington State University | Data Structures TA <span>Part Time</span></p>
